@@ -1,7 +1,8 @@
-# -*- encoding: utf-8 -*-
+# encoding: utf-8
 require "json"
+Encoding.default_external = Encoding::UTF_8
 
-package_json = JSON.parse(File.read("package.json"))
+package_json = JSON.parse(File.read("package.json").force_encoding("UTF-8"))
 
 Gem::Specification.new do |spec|
   spec.name                    = "minimal-mistakes-jekyll"

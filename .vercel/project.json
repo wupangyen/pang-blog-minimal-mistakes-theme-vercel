@@ -1,3 +1,4 @@
 {
-  "framework": "other"
+  "buildCommand": "bundle install && bundle exec jekyll build",
+  "outputDirectory": "_site"
 }

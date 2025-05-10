@@ -1,4 +1,4 @@
 {
-  "buildCommand": "bundle install && bundle exec jekyll build",
+  "buildCommand": "bundle install && bundle exec jekyll build && cp -r admin _site/admin",
   "outputDirectory": "_site"
 }
